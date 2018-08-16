@@ -1,0 +1,23 @@
+database:
+  driver: com.mysql.jdbc.Driver                      #数据库驱动
+  uri: jdbc:mysql://192.168.130.201:3306/test  #数据库地址
+  username: root                                     #用户名
+  password: 123456.abcd                                #用户密码
+
+packages:
+  model:
+    name: whu.jack.h5player.model                     #生成model所在的包
+    target: src/main/java  #生成model文件的目录
+  dao:
+    name: whu.jack.h5player.dao                       #生成dao层文件
+    target: src/main/java                             #生成dao文件所在的目录
+  mapper:
+    name: mapper                                      #生成mapper层文件
+    target: src/main/resources                        #生成mapper文件所在的目录
+
+tableConfigurations:
+- name: boot_user                            #table名称
+  enableSelect: true                               #是否生成select sql,其他sql有待更新 可选填写（true|false）
+  enableInsert: true
+  enableUpdate: true
+  enableDelete: true
