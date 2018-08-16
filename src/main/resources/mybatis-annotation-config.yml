@@ -12,8 +12,8 @@ packages:
     name: whu.jack.h5player.dao                       #生成dao层文件
     target: src/main/java                             #生成dao文件所在的目录
   mapper:
-    name: mapper                                      #生成mapper层文件
-    target: src/main/resources                        #生成mapper文件所在的目录
+    name: whu.jack.h5player.mapper                                      #生成mapper层文件
+    target: src/main/java                      #生成mapper文件所在的目录
 
 tableConfigurations:
 - name: boot_user                            #table名称
